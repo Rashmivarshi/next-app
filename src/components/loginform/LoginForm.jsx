@@ -12,7 +12,7 @@ const LoginForm = () => {
             <input type='password' placeholder='password' name="password" />
             <button>Login with credentials</button>
             {state?.error}
-            <Link href="/register">don't have an account? <b>Register</b></Link>
+            <Link href="/register">don&apos;t have an account? <b>Register</b></Link>
         </form>
     )
 }
