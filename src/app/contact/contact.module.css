@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+.imgcontainer {
+  flex: 1;
+  height: 500px;
+  width: 50px;
+  position: relative;
+}
+.formcontainer {
+  flex: 1;
+}
+.img {
+  object-fit: contain;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form input,
+.form textarea {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--bgSoft);
+  color: var(--text);
+}
+.form button {
+  padding: 20px;
+  background-color: var(--btn);
+  color: var(--text);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
