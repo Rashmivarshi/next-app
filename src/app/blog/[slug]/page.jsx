@@ -23,7 +23,7 @@ const SingleBlogPage = async ({ params }) => {
 
                     <div className={styles.detailText}>
                         <span className={styles.detailTitle}>published</span>
-                        <span className={styles.detailValues}>01.01.2024</span>
+                        <span className={styles.detailValues}>{post?.createdAt?.toString().slice(4, 16)}</span>
 
                     </div>
                 </div>
